@@ -1,0 +1,153 @@
+:root {
+    --common-color: #C8C2BC;
+    --primary-color: #fff;
+    --preview-color: #08FFF8;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+img {
+    display: block;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+    padding: 1.3rem;
+    background: #325288;
+    display: grid;
+    grid-gap: 2rem 0rem;
+    grid-template-rows: 15rem 4rem 3rem auto;
+    grid-template-columns: 1fr;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+    height: 116%;
+    border-radius: 0.5rem;
+    background: var(--preview-color);
+    opacity: .4;
+    position: relative;
+    top: -21.2rem;
+    display: none;
+}
+
+.view {
+    position: relative;
+    top: -11rem;
+    right: -7.3rem;
+    display: none;
+}
+
+/* merge cells */
+.main-box {
+    width: 80%;
+    grid-area: 1/1/2/3;
+    border-radius: 1.3rem;
+    margin: 0 auto;
+}
+
+.content {
+    grid-area: 2/1/3/3;
+    width: 80%;
+    padding: 2rem;
+}
+
+.left {
+   grid-area: 3/1/4/2; 
+}
+
+.right {
+    grid-area: 3/2/4/3; 
+ }
+
+.owner {
+    grid-area: -2/1/-1/-1;
+
+}
+
+h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+.info {
+    padding: 2rem;
+}
+
+p {
+    color: var(--common-color);
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-left, .icon-right {
+    height: 1em;
+}
+
+.sp2,.sp3 {
+    position: relative;
+    top: -0.8rem;
+    margin-left: 0.3rem;
+}
+
+.sp3 {
+    color: var(--preview-color);
+    font-weight: 400;
+}
+
+.sp1 {
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.owner {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+.owner > p {
+    position: relative;
+    top: -0.6rem;
+}
+
+.avatar {
+    height: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+
+h3:hover, .sp1:hover{
+    color: var(--preview-color);
+    cursor: pointer;
+}
+
+
+
